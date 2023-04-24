@@ -17,14 +17,15 @@
 <body>
     <h1>Calculando valores</h1>
     <input type="number" name="txtn1" id="txtn1">
-    <input type="number" name="txtn2" id="txtn2">
-    <input type="button" value="Somar" onclick="somar()">
-    <input type="button" value="Subtrair" onclick="subtrair()">
-    <input type="button" value="dividir" onclick="divisao()">
+    <input type="number" name="txtn2" id="txtn2"><br>
+    <input type="button" value="+" onclick="somar()">
+    <input type="button" value="-" onclick="subtrair()"><br>
+    <input type="button" value="/" onclick="divisao()">
+    <input type="button" value="X" onclick="mult()">
+    <input type="button" value="=" onclick="resultado()">
     <div id="resultado">Resultado</div>
     <script>
      
-
         function somar(){
             var tn1 = document.getElementById('txtn1')
             var tn2 = document.getElementById('txtn2')
@@ -52,6 +53,15 @@
             var n2 = Number(tn2.value)
             var div = n1 / n2
             res.innerHTML = `A divisão de ${n1} e ${n2} é igual a <strong>${div}</strong>`
+        }
+        function mult(){
+            var tn1 = document.getElementById('txtn1')
+            var tn2 = document.getElementById('txtn2')
+            var res = document.getElementById('resultado')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var mult = n1 * n2
+            res.innerHTML = `A multiplicação de ${n1} e ${n2} é igual a <strong>${mult}</strong>`
         }
     </script>
 </body>
