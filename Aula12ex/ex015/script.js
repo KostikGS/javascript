@@ -24,8 +24,8 @@ function verificar(){
                 img.setAttribute('src', 'imagens/adulto-h.jpg')
                 //Adulto
             } else {
-                img.setAttribute('src', 'imagens/idoso-h.jpg')
                 //Idoso
+                img.setAttribute('src', 'imagens/idoso-h.jpg') 
             }
         } else if (fsex[1].checked){
             genero = 'Mulher'
@@ -39,8 +39,8 @@ function verificar(){
                 //Adulto
                 img.setAttribute('src', 'imagens/adulto-f.jpg')
             } else {
+                  //Idoso
                 img.setAttribute('src', 'imagens/idoso-f.jpg')
-                //Idoso
             }
         }
         res.style.textAlign = 'center'
