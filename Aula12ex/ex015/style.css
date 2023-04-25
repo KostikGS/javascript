@@ -1,12 +1,18 @@
 @charset "UTF-8";
 
 body{
-    background: rgba(255, 166, 0, 0.644);
+    background: grey;
     font: normal 15pt Arial;
 }
 
 header{
     text-align: center;
+}
+
+img{
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
 }
 
 section{
@@ -15,7 +21,7 @@ section{
     padding: 15px;
     width: 500px;
     margin: auto;
-    color: white;
+    color: black;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.342);
 
 }
@@ -23,4 +29,5 @@ section{
 footer{
     color: white;
     text-align: center;
+    padding: 9px
 }
